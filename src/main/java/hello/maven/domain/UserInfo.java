@@ -1,8 +1,12 @@
 package hello.maven.domain;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
 public class UserInfo {
 	private String id;
 	private String password;

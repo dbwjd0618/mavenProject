@@ -1,15 +1,15 @@
-package hello.maven.controller;
+package hello.maven.controller.user;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/members")
-public class MemberController {
+@RequestMapping("/user")
+public class UserController {
 
 	@GetMapping("/signUp")
 	public String signUp() {
-		return "members/signUp";
+		return "user/signUp";
 	}
 }
