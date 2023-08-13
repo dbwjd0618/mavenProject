@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <title>회원가입 페이지</title>
-
 <style>
 	.input-group-text {
 		width:20%;
@@ -19,7 +18,11 @@
       width: 100%;
     }
 </style>
-
+<script>
+	function signUp() {
+		alert("signUp");
+	}
+</script>
 </head>
 
 <body>
@@ -32,26 +35,26 @@
     	<form>
 			<div class="input-group mb-3">
 				<span class="input-group-text" id="basic-id">Id</span>
-			    <input type="text" class="form-control" placeholder="사용하실 ID를 입력하세요" aria-label="id" aria-describedby="basic-id">
+			    <input type="text" class="form-control" placeholder="사용하실 ID를 입력하세요">
 		    </div>
 			<div class="input-group mb-3">
 				<span class="input-group-text" id="basic-password">Password</span>
-			    <input type="password" class="form-control" placeholder="사용하실 PASSWORD를 입력하세요" aria-label="password" aria-describedby="basic-password">
+			    <input type="password" class="form-control" placeholder="사용하실 PASSWORD를 입력하세요">
 		    </div>
 			<div class="input-group mb-3">
 				<span class="input-group-text" id="basic-name">Name</span>
-			    <input type="text" class="form-control" placeholder="이름을 입력하세요" aria-label="name" aria-describedby="basic-name">
+			    <input type="text" class="form-control" placeholder="이름을 입력하세요">
 		    </div>
 			<div class="input-group mb-3">
 				<span class="input-group-text" id="basic-address">Address</span>
-			    <input type="text" class="form-control" placeholder="주소를 입력하세요" aria-label="address" aria-describedby="basic-address">
+			    <input type="text" class="form-control" placeholder="주소를 입력하세요">
 		    </div>
 		    <div class="input-group mb-3">
 				<span class="input-group-text">Memo</span>
-				<textarea class="form-control" placeholder="메모사항을 입력하세요" aria-label="memo"></textarea>
+				<textarea class="form-control" placeholder="메모사항을 입력하세요"></textarea>
 			</div>
 			<div>
-				<button type="submit" class="btn btn-success">Sign Up</button>
+				<button type="button" class="btn btn-success" onclick="signUp();">Sign Up</button>
 			</div>
 	    </form>
     </div>
